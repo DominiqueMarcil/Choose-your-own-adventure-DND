@@ -10,6 +10,12 @@ let currentPath = 0;
 
 audio.src = "audio/mistymountain.mp3";
 
+function playAudio() {
+    if (audio.paused) {
+        audio.play();
+    }
+}
+
 function updateStory() {
     switch (currentPath) {
         case 0:
@@ -18,6 +24,7 @@ function updateStory() {
             choiceButton1.textContent = "Start your adventure";
             choiceButton1.style.display = "inline"; // Show choiceButton2
             choiceButton1.onclick = () => {
+                playAudio();
                 currentPath = 1;
                 updateStory();
             };
@@ -368,6 +375,4 @@ function updateStory() {
     }
 }
 
-
-audio.play();
 updateStory();
