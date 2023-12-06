@@ -115,7 +115,7 @@ function updateStory() {
                 }
                 break;
             case 6:
-                storyText.textContent = "As you arrive at the Mystic Griffin Tavern your heart lifts, its full of life and people, singing and games! You're invited to join in, do you wish 	to sign or to try your luck at card?";
+                storyText.textContent = "As you arrive at the Mystic Griffin Tavern your heart lifts, its full of life and people, singing and games! You're invited to join in, do you wish to sing or to try your luck at cards?";
                 scenarioImage.src = "images/entertavern.png";
                 choiceButton1.style.display = "inline"; // Show choiceButton2
                 choiceButton1.textContent = "Try your luck at cards";
@@ -123,7 +123,7 @@ function updateStory() {
                     currentPath = 14;
                     updateStory();
                 };
-                choiceButton2.textContent = "Sign like no one is watching";
+                choiceButton2.textContent = "Sing like no one is watching";
                 choiceButton2.style.display = "inline"; // Show choiceButton2
                 choiceButton2.onclick = () => {
                     currentPath =13;
@@ -178,7 +178,7 @@ function updateStory() {
                     };
                     break;
                 case 10:
-                    storyText.textContent = "You make it to town, your long rest did you well and you are ready to explore the town of Stonehaven.";
+                    storyText.textContent = "You take a long rest, after you awake you begin your journey to the town of Stonehaven.";
                     scenarioImage.src = "images/longrest.png";
                     choiceButton1.style.display = "inline"; // Show choiceButton2
                     choiceButton1.textContent = "Continue";
@@ -212,13 +212,13 @@ function updateStory() {
                 case 13:
                     storyText.textContent = "You decide to try your skills up on the stage, choose from the only two songs you know!";
                     scenarioImage.src = "images/drinktavern.png";
-                    choiceButton1.textContent = "Sign Old mcDonald";
+                    choiceButton1.textContent = "Sing Old mcDonald";
                     choiceButton1.style.display = "inline"; // Show choiceButton2
                     choiceButton1.onclick = () => {
                         currentPath = 26;
                         updateStory();
                     };
-                    choiceButton2.textContent = "Sign Maria Carey's All I want for Christmas is you";
+                    choiceButton2.textContent = "Sing Maria Carey's All I want for Christmas is you";
                     choiceButton2.style.display = "inline"; // Show choiceButton2
                     choiceButton2.onclick = () => {
                         currentPath = 27;
@@ -307,7 +307,7 @@ function updateStory() {
                     };
                     break;
                 case 27:
-                    storyText.textContent = "Wow...that was the worst signing anyone has ever heard. Seriously, you suck its actually impressive how bad you are at singing. Its so bad you actually killed someone... ";
+                    storyText.textContent = "Wow...that was the worst singing anyone has ever heard. Seriously, you suck its actually impressive how bad you are at singing. Its so bad you actually killed someone... ";
                     scenarioImage.src = "images/singing.png";
                     choiceButton1.textContent = "You attempt to apologize";
                     choiceButton1.style.display = "inline"; // Show choiceButton2
