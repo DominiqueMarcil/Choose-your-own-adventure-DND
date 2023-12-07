@@ -4,8 +4,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column; /* Ensure a column layout */
     height: 100vh;
     background-image: url('../images/dice_background.png');
     /* background-image: opacity(0.8); */
@@ -34,16 +35,19 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 #choiceButton1 {
     background-color: #DE9709;
     color: #fff;
+    margin-bottom: 5px;
 }
 
 #choiceButton2 {
     background-color: #DE9709;
     color: #fff;
+    margin-top: 5px;
 }
 
 
@@ -81,4 +85,46 @@ body {
     margin-bottom: 20px;  /* Adjust margin as needed */
     border-radius: 8px;  /* Optional: Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: Add a subtle shadow */
+}
+
+.link-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #DE9709;;
+    color: white;
+    border: 2px solid #930C10;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #930C10;
+    color: #fff;
+}
+
+.link-container {
+ flex-direction: column;
+ flex-wrap: wrap;
+ justify-self: unset;
+    align-self: center;
+    justify-content: center;
+}
+
+#citation {
+    font-size: 19px;
+    color: #000000;
+    margin-top: 20px;
+    background-color: #d3c4c4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
 }
